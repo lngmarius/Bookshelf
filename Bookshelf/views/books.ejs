@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Books</title>
+  <link rel="stylesheet" href="/stylesEjs.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap">
+
+</head>
+<body>
+  <h1><a href="index.html">My Bookshelf</a> - <a href="/categories">Categories</a> Books</h1>
+  <ul1>
+    <% books.forEach(book => { %>
+      <li>
+        <h2><%= book.title %></h2>
+        <p><strong>Author(s):</strong>
+          <% if (book.authors && book.authors.length > 0) { %>
+            <%= book.authors.map(author => author.name).join(", ") %>
+          <% } else { %>
+            Unknown
+          <% } %>
+        </p>
+        <p><strong>Publish Date:</strong> <%= book.first_publish_year || "N/A" %></p>
+        <!-- Add image rendering if available -->
+        <% if (book.cover && book.cover !== "") { %>
+            <img src="<%= book.cover %>" alt="<%= book.title %> Cover">
+          <% } %>
+    <% }); %>
+  </ul1>
+  <script src="script.js"></script>
+</body>
+</html>

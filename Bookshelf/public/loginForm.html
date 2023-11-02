@@ -1,0 +1,43 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Bookshelf</title>
+        <link rel="stylesheet" href="stylesLogin.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <h1><a href="index.html">My Bookshelf</a></h1>
+                <div class="button-container">
+                    <button  id="categories">Categories</button>
+                    <button id="profile">Profile</button>
+                    </div>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for a book">
+                    <button id="search-button">Search</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="login-form">
+            <h2>Login or Sign Up</h2>
+            <div class="login-signup-toggle">
+                <button id="login-btn">Login</button>
+                <button id="signup-btn">Sign Up</button>
+            </div>
+            <div id="login-form-content">
+                <input type="text" id="login-username" placeholder="Username">
+                <input type="password" id="login-password" placeholder="Password">
+                <button id="login-submit">Login</button>
+            </div>
+            <div id="signup-form-content" style="display:none">
+                <input type="text" id="signup-username" placeholder="Username">
+                <input type="password" id="signup-password" placeholder="Password">
+                <button id="signup-submit">Sign Up</button>
+            </div>
+        </div>    
+        <script src="loginScript.js"></script>
+    </body>
+    </html>

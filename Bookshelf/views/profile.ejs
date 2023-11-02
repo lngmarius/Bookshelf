@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="/stylesProfile.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1><a href="http://localhost:3000/index.html">My Bookshelf</a></h1>
+            <div class="button-container">
+                <button id="categories">Categories</button>
+                <button id="profile">Profile</button>
+            </div>
+        </div>
+    </header>
+    <div class="profile-content">
+        <h2>Your booklist, <%= username %></h2>
+        <div><br></div>
+        <% if (book_reviews && book_reviews.length > 0) { %>
+            <div id="users-reviews">
+                <% book_reviews.forEach(review => { %>
+                    <div>
+                        <h3><%= review.title %></h3>
+                        <p>Author: <%= review.author %></p>
+                        <p>Rating: <%= review.rating %></p>
+                        <p>Review: <%= review.review %></p>
+                    </div>
+                    <div><br></div>
+                <% }); %>
+            </div>
+        <% } else { %>
+            <p>No book reviews available.</p>
+        <% } %>
+
+
+    <button class="logout-button" onclick="window.location.href='/loginForm.html'">Logout</button>
+
+    </div>
+
+    <script src="index.html"></script>
+</body>
+</html>

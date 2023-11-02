@@ -1,0 +1,169 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #007BFF;;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: white;
+}
+
+.header-content h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+}
+
+h1 a {
+    text-decoration: none;
+    color: inherit;
+    cursor: text;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+}
+
+.button-container button:last-child {
+    margin-right: 0;
+}
+
+.button-container button:hover {
+    background-color: #004687;
+}
+
+/* Profile Content */
+.profile-content {
+    background: linear-gradient(to bottom, #f0f0f0, #fff); /* Gradient background */
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1); /* Adjusted shadow intensity */
+    padding: 30px; /* Increased padding for more spacing */
+    margin: 20px;
+}
+
+.profile-content h2 {
+    font-size: 24px;
+    color: #0074d9;
+}
+
+.profile-entry {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow intensity */
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.2s ease-in-out; /* Add hover effect for interaction */
+}
+
+.profile-entry:hover {
+    transform: scale(1.02); /* Slight scale effect on hover for interaction */
+}
+
+.profile-entry h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-entry p {
+    font-size: 16px;
+    color: #555;
+}
+
+
+.logout-button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+
+}
+
+.logout-button:hover {
+    background-color: #004687;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    .header-content {
+        flex-direction: column;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-container button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .button-container button:last-child {
+        margin-bottom: 0;
+    }
+
+    .profile-content {
+        max-width: 100%;
+    }
+}

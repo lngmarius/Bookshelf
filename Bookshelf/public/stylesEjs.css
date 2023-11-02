@@ -1,0 +1,206 @@
+/* stylesEjs.css */
+
+/* Reset and basic styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1 {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+
+ul li {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(50% - 10px); /* Distribute items in 2 columns */
+}
+
+/* Styles for the second unordered list with the .ul1 class */
+.ul1 {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Additional styles for the second unordered list with the .ul1 class */
+.ul1 li {
+  list-style: none;
+}
+
+
+
+li {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Book Title */
+h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Author Name */
+p strong {
+  font-family: 'EB Garamond', serif;
+  font-weight: bold;
+}
+
+/* Cover Image */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+button {
+  width: 100%; /* Buttons occupy the full width of the list item */
+  padding: 10px; /* Adjust padding as needed */
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  font-family: 'EB Garamond', serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 5px; /* Spacing between buttons */
+}
+
+
+#submit:hover {
+  background-color: #004687;
+}
+
+.submit:last-child {
+  margin-right: 0;
+}
+
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+      font-family: 'EB Garamond', serif;
+
+  }
+
+  /* Adjust the header for smaller screens */
+  header {
+      padding: 10px 0;
+  }
+
+  .header-content {
+      flex-direction: column;
+  }
+
+  .search-bar {
+      flex-direction: column;
+  }
+
+  #search-input {
+      width: 100%;
+  }
+
+  #search-button {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  /* Adjust book list container for smaller screens */
+  .book-list-container {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+      padding: 10px;
+  }
+
+  .book-item {
+      padding: 10px;
+  }
+
+  .book-item h3 {
+      font-size: 20px;
+      font-family: 'EB Garamond', serif;
+
+  }
+
+  .book-item p {
+      font-size: 16px;
+      font-family: 'EB Garamond', serif;
+
+  }
+
+  .book-item button {
+      padding: 5px 10px;
+  }
+
+  /* Adjust review form for smaller screens */
+  .form-container {
+      max-width: 100%;
+  }
+
+  .book-details {
+      flex-direction: column;
+  }
+
+  .book-cover {
+      width: 100%;
+      margin: 0;
+  }
+
+  .book-info {
+      flex: 1;
+  }
+
+  .book-title {
+      font-size: 20px;
+      font-family: 'EB Garamond', serif;
+
+  }
+
+  .author {
+      font-size: 16px;
+      font-family: 'EB Garamond', serif;
+
+  }
+}

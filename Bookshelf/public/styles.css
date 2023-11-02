@@ -1,0 +1,428 @@
+    /* Reset and basic styling */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'EB Garamond', serif;
+        font-size: 16px;
+        background-color: #f9f9f9;
+        color: #333;
+        
+    }
+
+    /* Header */
+    header {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-decoration: none; /* Remove underline */
+        color: white;
+    }
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        text-decoration: none; /* Remove underline */
+        color: white;
+    }
+
+    .header-content h1 {
+        font-family: 'EB Garamond', serif;
+        font-size: 28px;
+        text-decoration: none; /* Remove underline */
+        color: white;
+    }
+
+    h1 a {
+        text-decoration: none; /* Remove underline */
+        color: inherit; /* Use the default text color */
+        cursor: text; /* Change cursor to indicate it's not a link */
+    }
+
+    /* Search bar */
+    .search-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    #search-input {
+        width: 300px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        font-size: 16px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: flex-start; /* Align buttons to the left */
+    }
+
+    #categories{
+        padding: 10px 20px;
+        background-color: #0056b3;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 0 5px 5px 0;
+        transition: background-color 0.3s;
+        font-size: 16px;
+        position: relative;
+        size: auto; /* This line appears to be incomplete in your original code */
+        /* Add some additional styling for aesthetics */
+        text-transform: uppercase; /* Uppercase the text */
+        text-decoration: none; /* Remove underline */
+        letter-spacing: 1px; /* Add letter spacing */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+        margin-right: 20px;
+    }
+
+    #categories:hover {
+        background-color: #004687; /* Darker color on hover */
+    }
+
+    .categories:last-child {
+        margin-right: 0; /* Remove margin from the last button to avoid extra space */
+    }
+
+
+    .button-container {
+        display: flex;
+        justify-content: flex-start; /* Align buttons to the left */
+    }
+
+    #profile{
+        padding: 10px 20px;
+        background-color: #0056b3;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 0 5px 5px 0;
+        transition: background-color 0.3s;
+        font-size: 16px;
+        position: relative;
+        size: auto; /* This line appears to be incomplete in your original code */
+        /* Add some additional styling for aesthetics */
+        text-transform: uppercase; /* Uppercase the text */
+        text-decoration: none; /* Remove underline */
+        letter-spacing: 1px; /* Add letter spacing */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+        margin-right: 20px;
+    }
+
+    #profile:hover {
+        background-color: #004687; /* Darker color on hover */
+    }
+
+    .profile:last-child {
+        margin-right: 0; /* Remove margin from the last button to avoid extra space */
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: flex-start; /* Align buttons to the left */
+    }
+
+    #signin-btn{
+        padding: 10px 20px;
+        background-color: #0056b3;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 0 5px 5px 0;
+        transition: background-color 0.3s;
+        font-size: 16px;
+        position: relative;
+        size: auto; /* This line appears to be incomplete in your original code */
+        /* Add some additional styling for aesthetics */
+        text-transform: uppercase; /* Uppercase the text */
+        letter-spacing: 1px; /* Add letter spacing */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+        margin-right: 20px;
+    }
+
+    #signin-btn:hover {
+        background-color: #004687; /* Darker color on hover */
+    }
+
+    .signin-btn:last-child {
+        margin-right: 0; /* Remove margin from the last button to avoid extra space */
+    }
+
+    #search-button {
+        padding: 10px 20px;
+        background-color: #0056b3;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 0 5px 5px 0;
+        transition: background-color 0.3s;
+        font-size: 16px;
+    }
+
+    #search-button:hover {
+        background-color: #007BFF;
+    }
+
+    /* Book list */
+    .book-list-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .book-item {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        position: relative; /* Add position relative for positioning children */
+    }
+
+    .book-item h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .book-item p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    /* Center the "Add Review" button at the bottom of the book box */
+    .book-item button {
+        padding: 10px 20px;
+        background-color: #0056b3;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        font-size: 16px;
+        position: absolute;
+        bottom: 10px; /* Adjust as needed */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Center horizontally */
+    }
+
+    .book-item button:hover {
+        background-color: #007BFF;
+    }
+
+    /* Review form */
+    .form-container {
+        display: none;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        position: relative;
+    }
+
+    .book-details {
+        display: flex;
+        align-items: center;
+    }
+
+    .book-cover {
+        width: 120px;
+        height: 180px;
+        background-color: #eee;
+        border-radius: 5px;
+        margin-right: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden; /* Hide overflowing content */
+    }
+
+    #review-book-cover {
+        width: 100%; /* Ensure the image fills the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .book-info {
+        flex: 1;
+    }
+
+    .book-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .author {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .rating .stars {
+        font-size: 24px;
+        color: gray;
+        cursor: pointer;
+    }
+
+    .star.selected {
+        color: #ffbd5c; /* Goodreads yellow color */
+    }
+
+    .star:hover {
+        color: #ffbd5c;
+    }
+
+    /* Reading list */
+    .reading-list {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    #reading-list-items {
+        list-style: none;
+        padding: 0;
+    }
+
+    #reading-list-items li {
+        margin-bottom: 10px;
+        padding: 10px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    #reading-list-items li:last-child {
+        border: none;
+    }
+
+    .reading-list-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .reading-list-cover {
+        width: 80px;
+        height: 120px;
+        margin-right: 20px;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .reading-list-details {
+        flex: 1; /* Allow details to take remaining space */
+    }
+
+    @media (max-width: 768px) {
+        body {
+            font-size: 14px; /* Decrease the font size for smaller screens */
+        }
+
+        /* Adjust the header for smaller screens */
+        header {
+            padding: 10px 0;
+        }
+
+        .header-content {
+            flex-direction: column;
+        }
+
+        .search-bar {
+            flex-direction: column;
+        }
+
+        #search-input {
+            width: 100%;
+        }
+
+        #search-button {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        /* Adjust book list container for smaller screens */
+        .book-list-container {
+            grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+            padding: 10px;
+        }
+
+        .book-item {
+            padding: 10px;
+        }
+
+        .book-item h3 {
+            font-size: 20px;
+        }
+
+        .book-item p {
+            font-size: 16px;
+        }
+
+        .book-item button {
+            padding: 5px 10px;
+        }
+
+        /* Adjust review form for smaller screens */
+        .form-container {
+            max-width: 100%;
+        }
+
+        .book-details {
+            flex-direction: column;
+        }
+
+        .book-cover {
+            width: 100%;
+            margin: 0;
+        }
+
+        .book-info {
+            flex: 1;
+        }
+
+        .book-title {
+            font-size: 20px;
+        }
+
+        .author {
+            font-size: 16px;
+        }
+
+        .rating .stars {
+            font-size: 20px;
+        }
+
+        /* Adjust reading list for smaller screens */
+        .reading-list {
+            max-width: 100%;
+        }
+
+        .reading-list-item {
+            flex-direction: column;
+        }
+
+        .reading-list-cover {
+            width: 100%;
+            margin: 0;
+        }
+
+        .reading-list-details {
+            flex: 1;
+        }
+    }

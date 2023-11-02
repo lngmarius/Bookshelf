@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Bookshelf</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>My Bookshelf</h1>
+            <div class="button-container">
+                <button id="categories">Categories</button>
+                 <button id="profile">Profile</button>
+                 <button id="signin-btn">Sign In</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search for a book">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <div id="book-list" class="book-list-container"></div>
+    
+    <div id="review-form" class="form-container">
+        <h2>Add a Review</h2>
+        <div class="book-details">
+            <div class="book-cover">
+                <img id="review-book-cover" src="" alt="Book Cover">
+            </div>
+            <div class="book-info">
+                <div id="book-title" class="book-title"></div>
+                <div class="author" id="author"></div>
+                <div class="rating">
+                    <div class="stars" id="stars">
+                        <span class="star" data-star="1">★</span>
+                        <span class="star" data-star="2">★</span>
+                        <span class="star" data-star="3">★</span>
+                        <span class="star" data-star="4">★</span>
+                        <span class="star" data-star="5">★</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <textarea id="review-text" placeholder="Your Review"></textarea>
+        <button id="add-review">Add Review</button>
+    </div>
+    
+
+    <div id="reading-list" class="reading-list">
+        <h2>Reading List</h2>
+        <ul id="reading-list-items"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

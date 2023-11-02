@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Categories</title>
+  <link rel="stylesheet" href="/stylesEjs.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap">
+
+
+</head>
+<body>
+<h1><a href="index.html">My Bookshelf</a> - <a href="/categories">Book Categories</a></h1>
+
+  <!-- Display categories as labels and buttons for subjects within each category -->
+  <ul>
+    <% Object.keys(subjects).forEach(category => { %>
+      <li>
+        <label><%= category %></label>
+        <ul>
+          <% subjects[category].forEach(subject => { %>
+            <li>
+              <form action="/books-by-subject" method="get">
+                <button id="button" name="subject" value="<%= subject %>"><%= subject %></button>
+              </form>
+            </li>
+          <% }); %>
+        </ul>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
