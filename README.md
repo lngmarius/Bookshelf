@@ -50,15 +50,15 @@ To run this application locally, follow these steps:
 
 3. Navigate to the project folder and run the following command to install the required dependencies:
 
-                 cd your-project-folder
+       cd your-project-folder
 
 
 4. Install the required dependencies by running the following command:
 
-                     node server.js
+       node server.js
 
 
-6. The application will be accessible in your web browser at `http://localhost:3000`.
+4. The application will be accessible in your web browser at `http://localhost:3000`.
 
 Enjoy exploring and managing your bookshelf!
 
